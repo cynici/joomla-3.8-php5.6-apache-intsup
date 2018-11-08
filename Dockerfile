@@ -16,7 +16,7 @@ RUN apt-get update \
     libcyrus-imap-perl \
     cpanminus \
     build-essential \
- && a2enmod authnz_ldap cgi
+ && a2enmod authnz_ldap cgi remoteip headers
 
 ADD install-perlmodules.sh /
 RUN /install-perlmodules.sh
