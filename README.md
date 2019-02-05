@@ -14,3 +14,8 @@ ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined env=!forwarded
 CustomLog ${APACHE_LOG_DIR}/access.log forwarded env=forwarded
 ```
+
+## Emulating sendmail
+
+[ssmtp](https://linux.die.net/man/8/ssmtp) is included and may be used as a replacement for full-blown sendmail. Mount your custom `/etc/ssmtp.conf` to set it up. https://www.systutorials.com/docs/linux/man/5-ssmtp.conf/
+
